@@ -1,0 +1,9 @@
+body {
+  background-color: rgb(234, 241, 213); 
+  color: #0c0c0c;
+  }
+  .jumbotron {
+    background-image: url("../image/impossible_burgers.jpg");
+    background-size: 100% 100%;
+    text-align: center;
+  }  

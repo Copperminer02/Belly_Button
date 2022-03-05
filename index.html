@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link 
+    rel="stylesheet" 
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+/>
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav class="navbar">
+        <a class="navbar-brand" style="color:rgb(10, 68, 2)" href="#selDataset"><strong>Enter Test Sample ID</strong></a>
+        <a class="navbar-brand" style="color:rgb(10, 68, 2)" href="#gauge"><strong>Washing Frequency Gauge</strong></a>
+        <a class="navbar-brand" style="color:rgb(10, 68, 2)" href="#bubble"><strong>Bacteria Bubble Chart</strong></a>
+    </nav>
+  </div>
+  <div class="col-sx-12 col-md-12 jumbotron">
+    <h1 class="display-4">Belly Button Biodiversity Dashboard</h1>
+      <p>Use the interactive charts below to explore the dataset</p>
+  </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sx-12 col-md-4">
+        <h3>
+          <strong>To Build the Better Burger,<br> We're Trusting Our Guts!!</strong>
+        </h3>
+        <p>
+          <b>All quests start at the beginning, but we feel the quest to build the better burger should start in the middle, and.... you can't get more centered than the Belly Button. 
+            <br><br>Great solutions to our worlds growing environmental challenges require out of the "Jack in the Box" ideas.  We thank those of you who particpated and encourage you to 
+            select your Id number in the drop down to see how your reults.  You may be holding the secret sauce of bacteria to make the next great beef substitute.</b>
+
+        </p>
+      </div>
+        <div class="col-sx-12 col-md-2">
+          <div class="row bg-dark"></div>
+            <div class="well" style="background-color:rgb(10, 68, 2)">
+              <h5 style="color:rgb(250, 250, 250)">Test Subject ID No.:</h5>
+              <!-- <select id="selDataset"></select> -->
+              <select id="selDataset" onchange="optionChanged(this.value)"></select>
+          </div>
+            <div class="panel panel-primary">
+              <div class="panel-heading" style="background-color:rgb(10, 68, 2)">
+                <h3 class="panel-title">Demographic Info</h3>
+              </div>
+              <div id="sample-metadata" class="panel-body" ></div>
+            </div>
+          </div>
+          <div class="col-sx-12 col-md-6">
+            <div id="bar"></div>
+        </div>
+  </div>
+  <div class = "container-fluid">
+    <div class="col-sx-12 col-md-6">
+      <div id="gauge"></div>
+    </div>
+        <div class="row">
+          <div class="col-sx-12 col-md-6" aligment="center">
+            <h3> 
+              <strong>Where's the beef</strong>
+            </h3>
+            <h4><strong>You may have had it the whole time!!</strong></h4>
+            <p>
+              <br><br><b>How often to you wash your belly button?<br><br>
+              Does it matter, let's see.  The gauge shows the frequency per week that the the Sample Participant washes his or her
+              belly button. In conjuction with the chart below, you can compare all your belly button's bacterial hitchhikers to your washing frequency and we can ask the following questions:<br> <br>
+              <strong>1. Are there more than you expected?<br>2. How does the type and ammount change with wash frequecy?<br> 3. Do you have the special sauce?
+              <br> 3. Do you have the special sauce and how much do you make?</strong><br><br>
+              We hope you enjoy exploring this data, and thank you for your interest.  
+              Together we can build the perfect burger for a perfect environment</b>
+            </p>  
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  <div class="row">
+    <div class="col-md-12">
+      <div id="bubble"></div>
+    </div>
+  </div>
+</div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="./static/js/app.js"></script>
+
+</body>
+
+</html>
